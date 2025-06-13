@@ -1,0 +1,199 @@
+body {
+  background: #1a1a1a;
+  color: #fff;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+}
+.book-bg {
+  min-height: 100vh;
+  background: repeating-linear-gradient(135deg, #2d001a 0 40px, #1a1a1a 40px 80px);
+  padding: 60px 0;
+}
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #2d001a;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px #000a;
+  padding: 48px 40px 40px 40px;
+  position: relative;
+  border: 3px solid #7a1020;
+  min-height: 600px;
+}
+h1, h2 {
+  color: #7a1020;
+  margin-top: 0;
+  font-family: 'Merriweather', 'Georgia', serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.image-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #3a1a2c;
+  border-radius: 12px;
+  margin: 18px 0 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7a1020;
+  font-size: 1.1em;
+  font-style: italic;
+  border: 1.5px dashed #7a1020;
+}
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0 0 0;
+}
+.choice-btn {
+  background: #7a1020;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 2px 8px #0004;
+}
+.choice-btn:hover {
+  background: #4a0711;
+}
+.restart-btn {
+  margin-top: 32px;
+  background: #fff;
+  color: #7a1020;
+  border: 2px solid #7a1020;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 2px 8px #0004;
+}
+.restart-btn:hover {
+  background: #7a1020;
+  color: #fff;
+}
+.ate-proximo {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 24px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.book-footer {
+  text-align: center;
+  color: #7a1020;
+  font-size: 0.95em;
+  margin-top: 40px;
+  font-family: 'Merriweather', 'Georgia', serif;
+  opacity: 0.7;
+}
+.chapter {
+  text-align: justify;
+  font-size: 1.15em;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 800px) {
+  .container { padding: 18px 6vw; }
+}
+.book-cover {
+  background: linear-gradient(135deg, #7a1020 60%, #2d001a 100%);
+  color: #fff;
+  box-shadow: 0 8px 32px #000a;
+  border-radius: 18px;
+  border: 3px solid #fff;
+  max-width: 420px;
+  margin: 60px auto 0 auto;
+  padding: 48px 32px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+  position: relative;
+}
+.cover-art {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.cover-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  color: #fff;
+  text-shadow: 0 2px 8px #0007;
+}
+.cover-author {
+  font-size: 1.1em;
+  color: #ffe0e6;
+  margin-bottom: 18px;
+}
+.cover-prologo {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 18px 16px;
+  font-size: 1.08em;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px #0002;
+  color: #fff;
+  text-align: center;
+}
+.start-btn {
+  background: #fff;
+  color: #7a1020;
+  border: 2px solid #7a1020;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.15em;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #0004;
+}
+.start-btn:hover {
+  background: #7a1020;
+  color: #fff;
+}
+/* Efeito de papel para o fundo da história */
+.container:not(.book-cover) {
+  background: #f8f3ef;
+  color: #2d001a;
+  box-shadow: 0 8px 32px #000a, 0 0 0 8px #e2d3c6 inset;
+  border: 3px solid #7a1020;
+}
+.chapter {
+  color: #2d001a;
+}
+/* Botão de compartilhar */
+.share-btn {
+  margin-top: 24px;
+  background: #7a1020;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 2px 8px #0004;
+  transition: background 0.2s;
+}
+.share-btn:hover {
+  background: #4a0711;
+}
